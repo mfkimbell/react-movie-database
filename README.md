@@ -36,6 +36,6 @@ This is the organization of the components:
 
 <img width="416" alt="Screenshot 2023-05-10 at 7 34 07 PM" src="https://github.com/mfkimbell/react-movie-database/assets/107063397/a9baa6c8-43ff-4eb9-a688-89831f24e176">
 
-And this is what it looks like rendered:
+And this is what it looks like rendered the `delete`, `like`, `genres` in the top left, and `pagination` all work as expected:
 
 <img width="1409" alt="Screenshot 2023-05-10 at 7 18 11 PM" src="https://github.com/mfkimbell/react-movie-database/assets/107063397/0803110d-7eee-49fc-a03a-7f0b36852989">
