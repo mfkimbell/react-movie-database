@@ -17,13 +17,17 @@ class Movies extends Component {
     sortColumn: { path: "title", order: "asc" },
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     const genres = [{ _id: "", name: "All Genres" }, ...getGenres()];
+
     this.setState({
-      movies: getMovies(),
+      movies: fetch('https://localhost:7086/api/Movie'),
       genres: genres,
     });
+    console.log("in component", this.state.movies);
   }
+
+  
 
   handleDelete = (movie) => {
     console.log("movie deleted", movie);

@@ -70,7 +70,10 @@ const movies = [
 
 
 //these are exported functions
-export function getMovies() {
+export async function getMovies() {
+  console.log("response", getAllMovies());
+  movies = await getAllMovies();
+  console.log("mitch movie 2", movies);
   return movies;
 }
 
@@ -97,4 +100,16 @@ export function deleteMovie(id) {
   let movieInDb = movies.find(m => m._id === id);
   movies.splice(movies.indexOf(movieInDb), 1);
   return movieInDb;
+}
+
+export async function getAllMovies() {
+
+  try{
+      const response = await fetch('https://localhost:7086/api/Movie');
+      console.log("mitch response",response.json());
+      return await response.json();
+  }catch(error) {
+      return [];
+  }
+  
 }
