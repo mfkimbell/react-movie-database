@@ -24,6 +24,7 @@ namespace movie_api.Controllers
             {
                 return NotFound();
             }
+            
             return await _dbContext.Movies.ToListAsync();
         }
 

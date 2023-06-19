@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { getMovies } from "../services/fakeMovieService";
 import Pagination from "./common/pagination";
 import { paginate } from "../utils/paginate";
 import ListGroup from "./common/listGroup";
 import { getGenres } from "../services/fakeGenreService";
 import MoviesTable from "./moviesTable";
 import _ from "lodash";
+
 //imrc cc
 
 class Movies extends Component {
@@ -15,17 +15,34 @@ class Movies extends Component {
     pageSize: 4,
     currentPage: 1,
     sortColumn: { path: "title", order: "asc" },
+    hi: {hi: console.log("this is called again")},
   };
 
-  async componentDidMount() {
-    const genres = [{ _id: "", name: "All Genres" }, ...getGenres()];
 
+
+  async componentDidMount() {
+    
+
+      
+      fetch('https://localhost:7086/api/Movie').then(resp=>resp.json())
+      .then(resp=>
+   
     this.setState({
-      movies: fetch('https://localhost:7086/api/Movie'),
+      movies: resp})
+    );
+       
+    console.log("in component1", this.state);  
+      
+    const genres = [{ _id: "", name: "All Genres" }, ...getGenres()];
+    
+    
+    this.setState({
+      ...this.state,
       genres: genres,
     });
-    console.log("in component", this.state.movies);
+    console.log("in component2", this.state);
   }
+
 
   
 
