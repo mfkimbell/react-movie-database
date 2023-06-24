@@ -9,6 +9,13 @@
 * `.NET CORE Web API` allow api calls to go from front-end to back-end
 * `Entity Framework Core` allow for models to faciliate CRUD operations for sql tables
 * `Microsoft SQL Server` to store data
+
+  A C# and React JS  GUI that connects to
+                      Microsoft Sql Server using
+                      .NET Entity Framework CORE to do CRUD operations
+                      to manipulate movie data. The user can add, like, delete,
+                      and sort data in various ways, and these changes with be
+                      reflected in the sql database and the GUI.
 ---
 
 The ui is organized into these main components:
