@@ -36,6 +36,11 @@ This is the organization of the components:
 
 <img width="416" alt="Screenshot 2023-05-10 at 7 34 07 PM" src="https://github.com/mfkimbell/react-movie-database/assets/107063397/a9baa6c8-43ff-4eb9-a688-89831f24e176">
 
+We're using Entity Framework Core instead of making specific SQL calls, so here is a snippet of the Route, Model (for the sql table), and API call that is made when you add a book (however this is just one of many API routes and calls):
+
+![fjkdsl](https://github.com/mfkimbell/react-movie-database/assets/107063397/cc26e0ed-cb15-42e2-aaa7-6021a8922927)
+
+
 After rendering it looks like this. Each of the headings can be clicked and reclicked to sort by the headings *ascending* and *descending* order:
 
 ![slide1](https://github.com/mfkimbell/react-movie-database/assets/107063397/82f06e45-274a-4f57-a7c0-bf6d8524f94d)
