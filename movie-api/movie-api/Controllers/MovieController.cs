@@ -17,6 +17,15 @@ namespace movie_api.Controllers
             _dbContext = dbContext;
         }
 
+             [HttpPost]
+        public async Task<ActionResult<Movie>> PostMovie(Movie movie)
+        {
+            _dbContext.Movies.Add(movie);
+            await _dbContext.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
+        }
+
         [HttpGet]
 
         public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
@@ -45,14 +54,7 @@ namespace movie_api.Controllers
             return movie;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Movie>> PostMovie(Movie movie)
-        {
-            _dbContext.Movies.Add(movie);
-            await _dbContext.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
-        }
+   
 
         [HttpPut("{id}")]
 
