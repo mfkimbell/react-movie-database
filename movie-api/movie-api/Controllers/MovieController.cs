@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using movie_api.Models;
 
+
 namespace movie_api.Controllers
 {
     [Route("api/[controller]")]
@@ -53,7 +54,7 @@ namespace movie_api.Controllers
             return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
 
         public async Task<IActionResult> PutMovie(string id, Movie movie)
         {

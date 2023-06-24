@@ -27,12 +27,12 @@ class MoviesTable extends Component {
             (movie) => (
               <tr key={movie._id}>
                 <td>{movie.title}</td>
-                <td>{movie.genre.name}</td>
+                <td>{movie.genre}</td>
                 <td>{movie.numberInStock}</td>
                 <td>{movie.dailyRentalRate}</td>
                 <td>
                   <Like
-                    liked={movie.liked}
+                    liked={movie.isLiked}
                     onClickToggle={() => onLike(movie)}
                   ></Like>
                 </td>
