@@ -65,7 +65,7 @@ When categories are clicked, only books belonging to that category are displayed
 
 ![slide 3](https://github.com/mfkimbell/react-movie-database/assets/107063397/cb7a7a0c-bc37-4cbc-99f9-608d502532c4)
 
-When you click "Add Book" it renders a form that the user can fill out to add a book to the database:
+When you click "Add Movie" it renders a form that the user can fill out to add a movie to the database:
 
 ![addbook](https://github.com/mfkimbell/react-movie-database/assets/107063397/939022cc-eb7d-4de5-ac30-31c73e6ad57d)
 
