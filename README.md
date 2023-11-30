@@ -12,6 +12,7 @@
 * `.NET CORE Web API` allow api calls to go from front-end to back-end
 * `Entity Framework Core` allow for models to faciliate CRUD operations for sql tables
 * `Microsoft SQL Server` to store data
+* `Docker` containerization of the application
 
   A C# and React JS  GUI that connects to
                       Microsoft Sql Server using
