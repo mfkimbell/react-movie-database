@@ -1,5 +1,8 @@
 # react-movie-database
 
+![Untitled](https://github.com/mfkimbell/react-movie-database/assets/107063397/db5f7e1c-8035-4880-825d-96d19988601a)
+
+
 **Tools used:**
 * `React JS` for creating a user interface with reusable renderable components
 * `Bootstrap` to simplify css styling
