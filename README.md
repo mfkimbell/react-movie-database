@@ -1,6 +1,6 @@
 # react-movie-database
 
-![Untitled](https://github.com/mfkimbell/react-movie-database/assets/107063397/db5f7e1c-8035-4880-825d-96d19988601a)
+<img width="1000" alt="react workflow" src="https://github.com/mfkimbell/react-movie-database/assets/107063397/dc5fc313-d7a6-40a6-bcbf-62d3253ed0ae">
 
 
 **Tools used:**
